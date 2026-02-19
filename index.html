@@ -13,7 +13,7 @@
     <section>
       <!-- DADOS PESSOAIS -->
       <form action="" method="get">
-        <!-- <fieldset>
+        <fieldset>
 
           <legend>Dados Pessoais</legend>
           <label for="userName">Nome:</label>
@@ -40,7 +40,7 @@
 
           <label for="userImage">Upload de foto:</label>
           <input type="file" accept="image/*" name="userImage" /> <br /><br />
-        </fieldset> -->
+        </fieldset> 
         <br />
 
         <fieldset>
@@ -65,7 +65,9 @@
               <option value="divorciado">Divorciado</option>
               <option value="casado">União estável</option>
             </select>
-          </label> <br>
+          </label>
+          <br />
+          <br />
 
           <label for="userState"
             >Estado:
@@ -89,7 +91,9 @@
               <option value="Pernambuco">PE, Pernambuco</option>
               <option value="Piauí">PI, Piauí</option>
               <option value="Rio de Janeiro">RJ, Rio de Janeiro</option>
-              <option value="Rio Grande do Norte">RN, Rio Grande do Norte</option>
+              <option value="Rio Grande do Norte">
+                RN, Rio Grande do Norte
+              </option>
               <option value="Rio Grande do Sul">RS, Rio Grande do Sul</option>
               <option value="Rondônia">RO, Rondônia</option>
               <option value="Roraima">RR, Roraima</option>
@@ -98,7 +102,11 @@
               <option value="Sergipe">SE, Sergipe</option>
               <option value="Tocantins">TO, Tocantins</option>
             </select>
+            <br />
+            <br />
           </label>
+          <label for="userCidade">Cidade:</label>
+          <input type="text" cidade="userCidade" required /> <br /><br />
         </fieldset>
         <br />
         <button type="submit">Enviar</button>

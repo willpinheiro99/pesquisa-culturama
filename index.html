@@ -11,9 +11,9 @@
     </header>
 
     <section>
-      <!-- DADOS PESSOAIS -->
       <form action="" method="get">
-        <fieldset>
+        <DADOS PESSOAIS>
+      <!--   <fieldset> 
 
           <legend>Dados Pessoais</legend>
           <label for="userName">Nome:</label>
@@ -36,7 +36,7 @@
             pattern="[0-9]{11}"
             placeholder="DD + número"
           />
-          <br /><br />
+          <br /><br /> 
 
           <label for="userImage">Upload de foto:</label>
           <input type="file" accept="image/*" name="userImage" /> <br /><br />
@@ -106,9 +106,26 @@
             <br />
           </label>
           <label for="userCidade">Cidade:</label>
-          <input type="text" cidade="userCidade" required /> <br /><br />
-        </fieldset>
-        <br />
+          <input type="text" id="userCidade" name="userCidade" autocomplete="address-level2" placeholder="Ex.: Brasília"/> <br /><br />
+        </fieldset> -->
+        <br/>
+       
+        <fieldset>
+          <legend>Hábitos</legend>
+          <p>Redes Sociais:</p>
+          <input type="checkbox" name="social" value="instagram">
+          <label for="social">Instagram</label>
+           <br>
+          <input type="checkbox" name="social" value="facebook">
+          <label for="social">Facebook</label> 
+          <br>
+          <input type="checkbox" name="social" value="x">
+          <label for="social">X</label> 
+          <br>
+          <input type="checkbox" name="social" value="linkedin">
+          <label for="social">LinkedIn</label>
+        </fieldset> 
+
         <button type="submit">Enviar</button>
       </form>
     </section>

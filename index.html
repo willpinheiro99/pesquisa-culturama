@@ -18,7 +18,14 @@
           <input id="name" type="text" name="userName" required /> <br /><br />
 
           <label for="age">Idade:</label>
-          <input id="age" type="number" name="age" min="12" max="100" required />
+          <input
+            id="age"
+            type="number"
+            name="age"
+            min="12"
+            max="100"
+            required
+          />
           <br /><br />
 
           <label for="birthDate">Data de nascimento:</label>
@@ -38,7 +45,8 @@
           <br /><br />
 
           <label for="image">Upload de foto:</label>
-          <input id="image" type="file" accept="image/*" name="userImage" /> <br /><br />
+          <input id="image" type="file" accept="image/*" name="userImage" />
+          <br /><br />
         </fieldset>
         <br />
 
@@ -51,18 +59,23 @@
           <input id="masc" type="radio" name="userGender" value="Masculino" />
           <label for="masc">Masculino</label> <br />
 
-          <input id="notInformed" type="radio" name="userGender" value="notInformed" />
+          <input
+            id="notInformed"
+            type="radio"
+            name="userGender"
+            value="notInformed"
+          />
           <label for="notInformed">Prefiro não informar</label> <br />
           <br />
 
           <label for="maritalStatus">Estado civil: </label>
-            <select id="maritalStatus" name="userMaritalStatus">
-              <option value="notInformed">Selecione...</option>
-              <option value="casado">Casado</option>
-              <option value="solteiro">Solteiro</option>
-              <option value="divorciado">Divorciado</option>
-              <option value="casado">União estável</option>
-            </select>
+          <select id="maritalStatus" name="userMaritalStatus">
+            <option value="notInformed">Selecione...</option>
+            <option value="casado">Casado</option>
+            <option value="solteiro">Solteiro</option>
+            <option value="divorciado">Divorciado</option>
+            <option value="casado">União estável</option>
+          </select>
           <br />
           <br />
 
@@ -88,7 +101,9 @@
               <option value="Pernambuco">PE, Pernambuco</option>
               <option value="Piauí">PI, Piauí</option>
               <option value="Rio de Janeiro">RJ, Rio de Janeiro</option>
-              <option value="Rio Grande do Norte">RN, Rio Grande do Norte</option>
+              <option value="Rio Grande do Norte">
+                RN, Rio Grande do Norte
+              </option>
               <option value="Rio Grande do Sul">RS, Rio Grande do Sul</option>
               <option value="Rondônia">RO, Rondônia</option>
               <option value="Roraima">RR, Roraima</option>
@@ -115,7 +130,12 @@
         <fieldset>
           <legend>Hábitos</legend>
           <p>Redes Sociais:</p>
-          <input id="instagram" type="checkbox" name="social" value="instagram" />
+          <input
+            id="instagram"
+            type="checkbox"
+            name="social"
+            value="instagram"
+          />
           <label for="instagram">Instagram</label>
           <br />
           <input id="facebook" type="checkbox" name="social" value="facebook" />
@@ -126,21 +146,64 @@
           <br />
           <input id="linkedin" type="checkbox" name="social" value="linkedin" />
           <label for="linkedin">LinkedIn</label>
-          <br> <br>
-        
+          <br />
+          <br />
 
           <label for="musicStyle">Estilo Musical:</label>
-          <input list="styleTypes" id="musicStyle" name="userMusicStyle" type="text">
+          <input
+            list="styleTypes"
+            id="musicStyle"
+            name="userMusicStyle"
+            type="text"
+          />
           <datalist id="styleTypes">
-            <option value="Rock">
-            <option value="Pop">
-            <option value="Samba">
-            <option value="Sertanejo">
-            <option value="Mpb">    
-          </datalist> <br> <br>
+            <option value="Rock"></option>
+            <option value="Pop"></option>
+            <option value="Samba"></option>
+            <option value="Sertanejo"></option>
+            <option value="Mpb"></option>
+          </datalist>
+          <br />
+          <br />
           <label for="favoriteColor">Cor favorita:</label>
-          <input type="color" name="userfavoriteColor" id="favoriteColor">
+          <input type="color" name="userfavoriteColor" id="favoriteColor" />
         </fieldset>
+
+        <fieldset>
+          <legend>Opinião</legend>
+          <p>O que você acha da qualidade do nosso serviço?</p>
+
+          <input
+            type="radio"
+            id="otimo"
+            name="userServiceOpinion"
+            value="otima"
+          >
+          <label for="otimo">Ótima</label><br />
+
+          <input type="radio" id="boa" name="userServiceOpinion" value="boa" />
+          <label for="boa">Boa</label><br />
+
+          <input
+            type="radio"
+            id="regular"
+            name="userServiceOpinion"
+            value="regular"
+          >
+          <label for="regular">Regular</label><br />
+
+          <input
+            type="radio"
+            id="ruim"
+            name="userServiceOpinion"
+            value="ruim"
+          >
+          <label for="ruim">Ruim</label><br /> <br>
+
+          <label for="comment">Escreva sua opinião:</label> <br>
+          <textarea id="comment" name="userComment" placeholder="Digite aqui sua opinião..."></textarea>
+          </fieldset>
+          </fieldset>
 
         <button type="submit">Enviar</button>
       </form>

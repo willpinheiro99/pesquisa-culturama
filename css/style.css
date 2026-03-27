@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100px;
+}
+
+h1 {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+body {
+    background-color: ghostwhite;
+}
+
+header {
+    text-align: center;
+    margin: 20px;
+}
+
+main {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+form {
+    background: linear-gradient(180deg, #9bafb994 0%, #ffffff 50%, #c2c9d2 100%);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+fieldset {
+    padding: 15px;
+    border: 1px solid #ffff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0 5px;
+}

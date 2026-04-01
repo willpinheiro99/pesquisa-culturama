@@ -10,6 +10,9 @@ img {
 
 h1 {
     font-family: 'Fjalla One', sans-serif;
+    text-align: center;
+    align-items: center;
+    margin-top: 50px;
 }
 
 body {
@@ -28,9 +31,10 @@ main {
 }
 
 form {
-    background: linear-gradient(180deg, #9bafb994 0%, #ffffff 50%, #c2c9d2 100%);
+    background: linear-gradient(180deg, #798eb1f3 0%, #ffffff 50%, #435b86f3 100%);
     padding: 15px;
     border-radius: 12px;
+    margin-bottom: 500px;
 }
 
 fieldset {
@@ -40,8 +44,75 @@ fieldset {
     margin-bottom: 15px;
 }
 
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
 legend {
     font-weight: bold;
     font-size: 16px;
     padding: 0 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin: 5px;
+}
+
+input[type="color"] {
+    width: 40px;
+    padding: 0 5px;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+    border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+    border-color: green;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: green;
+    color: #ffffff;
+}
+
+button[type="reset"]:hover {
+    background-color: rgb(128, 32, 0);
+    color: #ffffff;
 }
